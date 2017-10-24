@@ -1,0 +1,346 @@
+.content{
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .userInfo{
+        background-color: #FFffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 26px;
+        .user{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-top: 30px;
+        }
+        .address{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            width: 100%;
+            height: 100%;
+            .addressText{
+                flex:1;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                .addressIcon{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex:1;
+                }
+            }
+            .right{
+                width: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height:40px;
+            }
+        }
+    }
+    .boxContent{
+        width: 100%;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .textContent{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 30px;
+        color: #212121;
+        height: 88px;
+        border-bottom:2px solid #000;
+        .rightIcon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .rightInput{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex:1;
+        }
+    }
+    .sellerInfo{
+        background-color: #FFffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        .sellerTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height:120px;
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+            .titleIcon{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .title{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex:1;
+                margin-left: 10px;
+                font-size: 26px;
+            }
+        }
+        .sellerItemContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            .sellerItem{
+                width:100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 200px;
+                padding-left: 10px;
+                background-color: #f3f3f3;
+                .imgDiv{
+                    width: 180px;
+                    img {
+                        width: 180px;
+                        height:180px;
+                    }
+                }
+                .itemInfo{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:space-between;
+                    align-items: flex-start;
+                    height: 180px;
+                    flex:1;
+                    margin-left: 20px;
+                    .top{
+                        word-break:break-all;
+                        font-size: 26px;
+                    }
+                    .center{
+                        word-break:break-all;
+                        font-size: 26px;
+                        color:#878787;
+                    }
+                    .bottom{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        .left{
+                            margin-left: 0px;
+                            flex:1;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: flex-start;
+                            .right{
+                                font-size: 26px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .numDiv{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .sellerCountText{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left:20px;
+            padding-right: 20px;
+            font-size: 30px;
+            color: #212121;
+            height: 88px;
+            .rightText{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+    }
+    .bottomBar{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 50px;
+        background-color: #FFffff;
+        height: 98px;
+        .bottomText{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            height: 98px;
+            flex:1;
+        }
+        .bottomButton{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            height: 98px;
+            width: 220px;
+            background-color: #fa3232;
+            color: #FFffff;
+            font-size: 34px;
+        }
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.couponList{
+    height: 816px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .couponTop{
+        height: 180px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .couponTitle{
+            font-size: 34px;
+            color: #333333;
+        }
+        .couponNextTitle{
+            margin-top: 10px;
+            font-size: 26px;
+            color: #878787;
+        }
+    }
+    .couponCenter{
+        width: 95%;
+        position: relative;
+        flex:1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        .couponItem{
+            height:240px;
+            width: 100%;
+            border-bottom:1px solid #dbdbdb;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            .couponItemLeft{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                height: 100%;
+                .couponItemTop{
+                    margin-top: 40px;
+                    font-size: 36px;
+                    color: red;
+                    .textSmall{
+                        font-size: 26px;
+                    }
+                }
+                .couponItemCenter{
+                    margin-top: 20px;
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 32px;
+                }
+                .couponItemBottom{
+                    font-size: 26px;
+                    color: #878787;
+                    margin-top: 20px;
+                }
+            }
+            .couponItemRight{
+                width: 200px;
+                height:100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .couponBottom{
+        height: 98px;
+        width: 100%;
+        font-size: 32px;
+        color: #FFFFFF;
+        background-color:#313131;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputStyle{
+        border:none;
+        width:100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

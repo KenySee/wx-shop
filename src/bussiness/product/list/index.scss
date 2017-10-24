@@ -1,0 +1,173 @@
+$bc: #e0e0e0; //   边框颜色
+.pro_list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: relative;
+  .appBar{
+    position: absolute;
+    height: 88px;
+    width: 100%;
+    top:0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #fff;
+    .barItem{
+      height: 100%;
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 34px;
+      color: #000;
+      .arrow{
+        width: 20px;
+        height: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .up{
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-bottom: 8px solid black;
+        }
+        .down{
+          margin-top: 4px;
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid black;
+        }
+        .up.red{
+          border-top: 8px solid red;
+        }
+        .down.red{
+          border-top: 8px solid red;
+        }
+      }
+    }
+    .barItem.red span{
+      color: #f00;
+    }
+    .otherItem{
+      flex:1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .toggleButton{
+        background-color: #949494;
+        height: 100%;
+        width: 100px;
+      }
+    }
+  }
+  .list-view-section-body{
+    margin-top: 88px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    .item-col1{
+      background-color: #fff;
+      width: 100%;
+      height: 240px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      .image{
+        width: 250px;
+        height: 100%;
+        padding: 16px 16px 16px 26px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .desc{
+        width: 500px;
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom: #e0e0e0 1Px solid;
+        .text{
+          font-size: 26px;
+          color: #010101;
+        }
+        .red{
+          display: block;
+          margin-top: 8px;
+          height: 30px;
+          line-height: 30px;
+          width: 60px;
+          text-align: center;
+          font-size: 24px;
+          color:#fff;
+          background: #f00;
+        }
+        .price{
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .item-col2{
+      width: 368px;
+      height: 488px;
+      background: #fff;
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      img{
+        height: 368px;
+      }
+      .desc{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-top: 15px;
+        .name{
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          .red{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            width: 60px;
+            text-align: center;
+            font-size: 24px;
+            color:#fff;
+            background: #f00;
+          }
+          .text{
+            margin-left: 5px;
+            font-size: 24px;
+            height: 30px;
+            width: 280px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .item-col2:nth-child(2n+1){
+      margin-right: 14px;
+    }
+  }
+}
